@@ -3,7 +3,7 @@
 Install via Composer:
 
 ```
-composer require usama/firebase-notifications
+composer require usamatoor/firebase-notifications
 ```
 
 If you're developing locally:
