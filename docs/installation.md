@@ -6,6 +6,23 @@ Install via Composer:
 composer require usamatoor/firebase-notifications
 ```
 
+
+# 🔥 Firebase Notifications for Laravel
+
+A lightweight Laravel package to send Firebase Cloud Messaging (FCM) notifications using OAuth2 — with no Firebase Admin SDK required.
+
+> ⚡ Built for Laravel 10/11/12+ — Ideal for secure token-based FCM delivery in PHP.
+
+---
+
+## 📦 Installation
+
+Install the package via [Packagist](https://packagist.org/packages/usamatoor/firebase-notifications):
+
+```bash
+composer require usamatoor/firebase-notifications
+
+
 If you're developing locally:
 
 ```json
@@ -22,7 +39,26 @@ Then run:
 
 ```
 composer require usamatoor/firebase-notifications:dev-main
+
+
 ```
+Configuration:
+```php artisan vendor:publish --tag=firebase-notifications-config```
+
+This will create config/firebase-notifications.php
+
+
+Now, update your .env:
+
+``` 
+FIREBASE_CLIENT_ID=your-client-id
+FIREBASE_CLIENT_SECRET=your-client-secret
+FIREBASE_REFRESH_TOKEN=your-refresh-token
+FIREBASE_PROJECT_ID=your-firebase-project-id
+FIREBASE_NOTIFICATIONS_ENDPOINT=https://fcm.googleapis.com/v1/projects/:project_id/messages:send 
+```
+
+
 # 🔐 Firebase Notifications - OAuth2 Setup Guide
 
 This guide explains how to configure Firebase Cloud Messaging (FCM) to work with the `usama/firebase-notifications` Laravel package using OAuth2.
@@ -74,13 +110,3 @@ https://www.googleapis.com/auth/firebase.messaging
 
 ---
 
-## 4. Update `.env`
-
-Add the following to your Laravel project `.env`:
-
-```env
-FIREBASE_NOTIFICATIONS_CLIENT_ID=your-client-id
-FIREBASE_NOTIFICATIONS_CLIENT_SECRET=your-client-secret
-FIREBASE_NOTIFICATIONS_REFRESH_TOKEN=your-refresh-token
-FIREBASE_NOTIFICATIONS_PROJECT_ID=your-firebase-project-id
-FIREBASE_NOTIFICATIONS_ENDPOINT=https://fcm.googleapis.com/v1/projects/:project_id/messages:send
