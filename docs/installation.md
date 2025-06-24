@@ -20,7 +20,7 @@ If you're developing locally:
 Then run:
 
 ```
-composer require usama/firebase-notifications:dev-main
+composer require usamatoor/firebase-notifications:dev-main
 ```
 # 🔐 Firebase Notifications - OAuth2 Setup Guide
 
