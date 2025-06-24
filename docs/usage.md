@@ -14,3 +14,14 @@ $response = $notifier->send(
 ```
 
 Optional payload can include `data`, `android`, `apns`, etc.
+#Handling Errors
+```php
+use Usama\FirebaseNotifications\Exceptions\NotificationSendException;
+
+try {
+    $notifier = new FirebaseNotifications();
+    $notifier->send($token, $title, $body);
+} catch (NotificationSendException $e) {
+    \Log::error('FCM error: ' . $e->getMessage());
+}
+```
