@@ -72,7 +72,7 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 <hr />
 
-<p align="center" style="color:#20c997;"><strong>Created with ❤️ by Usama Toor</strong></p>
+
 
 - [Installation](docs/installation.md)
 - [Configuration](docs/configuration.md)
@@ -80,3 +80,6 @@ Pull requests are welcome! For major changes, please open an issue first.
 - [Exceptions](docs/exceptions.md)
 - [Advanced Features](docs/advanced.md)
 - [Contributing](docs/contributing.md)
+
+
+<p align="center" style="color:#20c997;"><strong>Created with ❤️ by Usama Toor</strong></p>
