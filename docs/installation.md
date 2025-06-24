@@ -12,9 +12,10 @@ If you're developing locally:
 "repositories": [
   {
     "type": "path",
-    "url": "packages/Usama/firebase-notifications"
+    "url": "packages/Usamatoor/firebase-notifications"
   }
 ]
+
 ```
 
 Then run:
