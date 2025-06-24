@@ -1,12 +1,19 @@
 {
-  "name": "usama/firebase-notifications",
-  "description": "Laravel Firebase Notifications package using OAuth2.",
+  "name": "usamatoor/firebase-notifications",
+  "description": "Laravel Firebase Notifications package using OAuth2 (Google) with cURL.",
   "type": "library",
- "autoload": {
-  "psr-4": {
-    "Usama\\FirebaseNotifications\\": "src/"
-  }
-},
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Usama Toor",
+      "email": "usama.toor1993@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Usama\\FirebaseNotifications\\": "src/"
+    }
+  },
   "require": {
     "php": "^8.1",
     "illuminate/support": "^12.0"
